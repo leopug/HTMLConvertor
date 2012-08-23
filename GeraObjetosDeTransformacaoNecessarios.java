@@ -12,6 +12,11 @@ public class GeraObjetosDeTransformacaoNecessarios {
 			listaTransformadores.add(transformador);
 		}
 		
+		if(Validadores.validaParaATagI(textoASerValidado)){
+			TransformadorParaATagI transformador = new TransformadorParaATagI();
+			listaTransformadores.add(transformador);
+		}
+		
 		return listaTransformadores;
 	}	
 	

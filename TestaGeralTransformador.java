@@ -6,7 +6,7 @@ public class TestaGeralTransformador {
 	 */
 	public static void main(String[] args) {
 		
-	String texto = "Vamo que vamo **bruxao** . E agora **";	
+	String texto = "Vamo que// vamo **bruxao** .// E ag//ora **";	
 		
 	TransformaGeral transformaTudoEmHTML = new TransformaGeral();
 	
