@@ -7,15 +7,9 @@ public class GeraObjetosDeTransformacaoNecessarios {
 		
 		List<InterfaceTransformador> listaTransformadores = new ArrayList<InterfaceTransformador>();
 		
-		if(Validadores.validaParaATagBR(textoASerValidado)){
-			TransformadorParaATagBR transformador = new TransformadorParaATagBR();
-			listaTransformadores.add(transformador);
-		}
+			listaTransformadores.add(new TransformadorParaATagBR());		
+			listaTransformadores.add(new TransformadorParaATagI());
 		
-		if(Validadores.validaParaATagI(textoASerValidado)){
-			TransformadorParaATagI transformador = new TransformadorParaATagI();
-			listaTransformadores.add(transformador);
-		}
 		
 		return listaTransformadores;
 	}	

@@ -9,14 +9,12 @@ public class TransformadorParaATagI implements InterfaceTransformador {
 		while(valida){
 			
 		textoASerTransformado = textoASerTransformado.replaceFirst("//", "<i>");
-		textoASerTransformado = textoASerTransformado.replaceFirst("//*", "<\\\\i>");
+		textoASerTransformado = textoASerTransformado.replaceFirst("//", "</i>");
 		valida =  Validadores.validaParaATagI(textoASerTransformado);
 		
 		}
 		
 		return textoASerTransformado;
 	}
-
-	
 	
 }

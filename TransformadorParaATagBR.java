@@ -7,9 +7,8 @@ public class TransformadorParaATagBR implements InterfaceTransformador {
 		boolean valida = true;
 		
 		while(valida){
-			
-		textoASerTransformado = textoASerTransformado.replaceFirst("\\*\\*", "<br>");
-		textoASerTransformado = textoASerTransformado.replaceFirst("\\*\\*", "<\\\\br>");
+		
+		textoASerTransformado = textoASerTransformado.replaceAll("\\*{2}(.*?)\\*{2}", "<br>$1</br>");
 		valida =  Validadores.validaParaATagBR(textoASerTransformado);
 		
 		}
